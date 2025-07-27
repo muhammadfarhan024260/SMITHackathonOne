@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #fbfaff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------ */
+
+#navbar {
+    background-color: #fefeff;
+}
+
+#navbar-employee {
+    color: #6851ff;
+}
+
+/* ------ */
+
+#section1-p1 {
+    color: #6851ff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#section1-p2 {
+    color: #000000;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+#section1-p3 {
+    color: #000000;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+#section1-left {
+    width: 100%;
+    height: 50%;
+    border: 2px dashed #6C63FF;
+    border-radius: 12px;
+    background-color: #f8f6ff;
+    color: #6C63FF;
+}
+
+/* ------ */
+
+
+.section-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+}
+
+.number-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #6C63FF;
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.step-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.step-description {
+    font-size: 0.8rem;
+    /* margin-bottom: 0.8rem; */
+    color: #333;
+}
+
+
+/* ------ */
+
+#footer {
+    width: 100%;
+    background: linear-gradient(180deg, #503cdd, #9246fd);
+    /* your dark bg */
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer #elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+
+.elements_footer {
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+
+.elements_footer h3 {
+    margin-bottom: 1rem;
+}
+
+.elements_footer a {
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+}
+
+.elements_footer a:hover {
+    text-decoration: underline;
+}
+
+#logo_footer img {
+    margin-bottom: 1rem;
+}
+
+#rights {
+    height: 3rem;
+    border-top: 1px solid white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}
+
+#footer-p {
+    font-size: 0.7rem;
+    color: #00ffb2;
+}
+
+
+#rights-div1 {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.rights-div1-elements:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#rights-p {
+    color: #FFFFFF;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
