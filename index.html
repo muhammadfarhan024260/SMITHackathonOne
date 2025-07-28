@@ -7,6 +7,9 @@
     <title>Resume Checker</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +17,7 @@
     <div class="px-5 body">
         <!-- Navbar -->
         <div id="navbar">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="./logo.png" alt="Bootstrap" width="100">
@@ -74,7 +77,20 @@
                     perform and get
                     you interview callbacks.</p>
                 <div id="section1-left" class="col-md-12 d-flex justify-content-center">
-                    <img src="./section1-left" alt="">
+                    <div class="upload-box-2 text-center p-4">
+                        <div class="upload-icon">
+                            <i class="bi bi-cloud-arrow-up-fill upload-icon-lg"></i>
+                        </div>
+                        <h5 class="text-purple mb-1">Upload Your Resume</h5>
+                        <p class="text-muted small">PDF format only, max 5MB</p>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-purple">
+                                <i class="bi bi-cloud-arrow-up-fill"></i>
+                                SELECT FILE
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 p-2">
@@ -121,40 +137,278 @@
             </div>
         </div>
 
+        <!-- Section 3: Resume Optimization Checklist -->
+        <section class="resume-section-3 py-5">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <h1 class="rs3-heading">Our AI-powered resume checker goes beyond typos
+                        and punctuation</h1>
+                    <p class="fs-5" style="font-weight: 600;">We’ve built-in ChatGPT to help you create a resume that’s
+                        tailored to the position
+                        you’re applying for.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4" style="height: auto;">
+                        <div class="text-left">
+                            <h3 class="rs3-title" style="font-size: 1.7rem;">Resume optimization checklist</h3>
+                            <p style="color: black;">We check for 16 crucial things across 5 different categories on
+                                your
+                                resume
+                                including content, file type, and keywords in the most important sections of your
+                                resume.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Skills Suggestion -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="rs3-box">
+                            <div class="rs3-icon"><i class="bi bi-lightbulb-fill"></i></div>
+                            <h5 class="rs3-h5">Skills Suggestion</h5>
+                            <ul class="rs3-list">
+                                <li><i class="bi bi-check-circle"></i> Hard skills</li>
+                                <li><i class="bi bi-check-circle"></i> Soft skills</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Resume Sections -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="rs3-box">
+                            <div class="rs3-icon"><i class="bi bi-layout-text-window"></i></div>
+                            <h5 class="rs3-h5">Resume sections</h5>
+                            <ul class="rs3-list">
+                                <li><i class="bi bi-check-circle"></i> Contact information</li>
+                                <li><i class="bi bi-check-circle"></i> Essential sections</li>
+                                <li><i class="bi bi-check-circle"></i> Personality showcase with tips on how to improve
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="rs3-box">
+                            <div class="rs3-icon"><i class="bi bi-pencil-fill"></i></div>
+                            <h5 class="rs3-h5">Content</h5>
+                            <ul class="rs3-list">
+                                <li><i class="bi bi-check-circle"></i> ATS parse rate</li>
+                                <li><i class="bi bi-check-circle"></i> Repetition of words and phrases</li>
+                                <li><i class="bi bi-check-circle"></i> Spelling and grammar</li>
+                                <li><i class="bi bi-check-circle"></i> Quantifying impact in experience section with
+                                    examples</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Format -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="rs3-box">
+                            <div class="rs3-icon"><i class="bi bi-filetype-pdf"></i></div>
+                            <h5 class="rs3-h5">Format</h5>
+                            <ul class="rs3-list">
+                                <li><i class="bi bi-check-circle"></i> File format and size</li>
+                                <li><i class="bi bi-check-circle"></i> Resume length</li>
+                                <li><i class="bi bi-check-circle"></i> Long bullet points with suggestions on how to
+                                    shorten
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Style -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="rs3-box">
+                            <div class="rs3-icon"><i class="bi bi-palette-fill"></i></div>
+                            <h5 class="rs3-h5">Style</h5>
+                            <ul class="rs3-list">
+                                <li><i class="bi bi-check-circle"></i> Resume design</li>
+                                <li><i class="bi bi-check-circle"></i> Email address</li>
+                                <li><i class="bi bi-check-circle"></i> Usage of active voice</li>
+                                <li><i class="bi bi-check-circle"></i> Usage of buzzwords and cliches</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+
+        <div class="row my-5 py-4">
+            <div class="col-md-6 p-2 justify-content-center">
+                <img src="./section4-left.jpg" alt="Resume Checker" class="img-fluid" width="90%">
+            </div>
+            <div class="col-md-6 p-2 d-flex align-items-center">
+                <div>
+                    <p id="section4-title">Get an ATS understanding check</p>
+                    <p class="section3-subtitle">
+                        Part of the resume checker score we assign is based on the parsability rate of your resume.
+                        We’ve reverse-engineered the most popular applicant tracking systems currently used and we look
+                        for signs of ATS compatibility.
+                    </p>
+                    <p class="section3-subtitle">
+                        For each resume uploaded, we look for skills and keywords connected to the job and industry
+                        you’re applying for, readable contact information, file type, and length. Then, we’ll give you
+                        suggestions on how to improve your resume.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5 -->
+
+        <div class="row py-4 d-flex flex-column justify-content-center align-items-center text-center">
+            <p id="section5-p2">Get your resume score now!</p>
+            <p id="section5-p3">Upload your resume and you’ll get a personalized email with an actionable task list.</p>
+            <div id="section5-left" class="col-md-12 d-flex justify-content-center align-items-center">
+                <div class="upload-box text-center p-4">
+                    <div class="upload-icon mb-0">
+                        <i class="bi bi-cloud-arrow-up-fill"></i>
+                    </div>
+                    <button class="btn btn-primary px-4 py-2 mb-3">Upload Your Resume</button>
+                    <p class="text-dark mb-1">Drop Your Resume here or choose a file.</p>
+                    <p class="text-dark small">PDF & DOCX only. Max 2MB file size.</p>
+                    <div class="text-dark mt-3 d-flex justify-content-center align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#707070"
+                            class="bi bi-lock-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4m0 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3" />
+                        </svg>
+                        <span>Privacy guaranteed</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section py-5">
+            <div class="container px-0">
+                <h2 class="faq-heading mb-4">Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item my-3 custom-shadow">
+                        <h2 class="accordion-header" id="faqHeadingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapseOne" aria-expanded="false" aria-controls="faqCollapseOne">
+                                What is a resume checker?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseOne" class="accordion-collapse collapse" aria-labelledby="faqHeadingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                A resume checker is a tool or software used to evaluate and improve resumes. It checks
+                                for
+                                proper formatting, relevant keywords (important for Applicant Tracking Systems), grammar
+                                and
+                                spelling errors, and content relevance.
+                                <br><br>
+                                HiringMine’s resume checker also assesses consistency in details, suggests customization
+                                for
+                                different industries, and provides feedback for improvement. We help ensure your resume
+                                meets
+                                current professional standards and trends and increase your chances of getting noticed
+                                by
+                                employers and recruiters.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item custom-shadow">
+                        <h2 class="accordion-header" id="faqHeadingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                How do I check my resume score?
+                            </button>
+                        </h2>
+                        <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Upload your resume to HiringMine’s Resume Checker.Once we run the check you will be
+                                redirected to another page where you can see your report with a score on the left side
+                                of the screen.
+                                <br><br>
+                                Keep in mind that there’s no such thing as an ATS score – no tool online that provides a
+                                score gives an actual score.
+                                <br><br>
+                                HiringMine’s resume report scoring system is based on two major things:
+                                <br><br>
+                                The percentage of parsed content: - Like an ATS we parse your resume and we try to
+                                understand it. The more we understand from your resume, the better it performs with an
+                                ATS used by a company.
+                                <br><br>
+                                The issues our checker finds : – While applicant tracking systems don’t check for typos
+                                and badly written content, our checker and recruiting managers do. The second aspect of
+                                our scoring depends on the measurable accomplishments in your resume and the caliber of
+                                the writing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </div>
 
+
     <!-- Footer -->
-    <div id="footer" class="row g-0">
-        <!-- <div class="p-5"> -->
-        <div id="elements">
-            <div id="logo_footer" class="elements_footer col-8 col-s-6" style="text-align: left;">
-                <a href="#navbar1"><img src="./logo.png" alt="logo" style="width: 7rem"></a>
-                <p class="footer-p" style="font-size: 0.8rem;">Built with ❤️ in Pakistan for the World.</p>
-                <p class="footer-p" style="font-size: 0.8rem;">HiringMine bridges top talent and visionary companies
-                    through a smart, streamlined platform. Empowering candidates to shine, and employers to hire better
-                    — faster. Your next opportunity, powered by technology and trust.</p>
+    <footer id="footer" class="text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <!-- Left side: Logo and text -->
+                <div class="col-md-9 mb-4">
+                    <img src="./logo-light.png" alt="logo" style="width: 7rem;">
+                    <div class="footer-text mt-3">
+                        <p class="footer-p">Built with ❤️ in Pakistan for the World.</p>
+                        <p class="footer-p">
+                            HiringMine bridges top talent and visionary companies through a smart, streamlined platform.
+                            Empowering candidates to shine, and employers to hire better — faster.
+                            Your next opportunity, powered by technology and trust.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- Right side: Contact -->
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <a href="#" class="contact-footer-list d-block mb-1">portal.hiringmine@gmail.com</a>
+                    <a href="#" class="contact-footer-list d-block mb-1">Life at HiringMine</a>
+                    <a href="#" class="contact-footer-list d-block">About HiringMine</a>
+                </div>
             </div>
-            <div id="contact_footer" class="elements_footer col-4 col-s-6">
-                <h3 style="font-size: 0.9rem;">Contact Us</h3>
-                <a href="#" class="contact-footer-list">protal.hiringmine@gmail.com</a>
-                <a href="#" class="contact-footer-list">Life at HiringMine</a>
-                <a href="#" class="contact-footer-list">About HiringMine</a>
+
+            <!-- Social Icons -->
+            <div class="mt-4">
+                <h5 class="fw-bold">Follow us</h5>
+                <div class="d-flex gap-5 mt-2">
+                    <i class="bi bi-facebook fs-4"></i>
+                    <i class="bi bi-whatsapp fs-4"></i>
+                    <i class="bi bi-instagram fs-4"></i>
+                    <i class="bi bi-linkedin fs-4"></i>
+                </div>
             </div>
+
+            <!-- Footer bottom -->
+            <hr class="border-white mt-4">
+
+            <div class="text-center">
+                <div class="mb-2">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none">Terms and Condition</a>
+                </div>
+                <div class="text-white mt-1">
+                    Copyright Hiringmine 2025. All Rights Reserved
+                </div>
+            </div>
+
         </div>
-        <div id="rights">
-            <div>
-                <ul>
-                    <li id="rights-div1">
-                        <p class="rights-div1-elements px-2">Privacy Policy</p>
-                        <p class="rights-div1-elements px-2">Terms and Condition</p>
-                    </li>
-                    <p id="rights-p">Copyright Hiringmine 2025. All Rights Reserved</p>
-                </ul>
-            </div>
-            <div></div>
-        </div>
-        <!-- </div> -->
-    </div>
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
