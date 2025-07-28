@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
 .body {
-    background-color: #fbfaff;
-    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #ffffff, #ece9ff);
+    font-family: Roboto, sans-serif;
+    height: 100%;
 }
 
 /* ------ */
@@ -17,6 +19,10 @@
 
 #navbar-employee {
     color: #6851ff;
+}
+
+#navitem:hover {
+    cursor: pointer;
 }
 
 /* ------ */
@@ -36,10 +42,11 @@
 
 #section1-p3 {
     color: #000000;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
+/* Use your existing container styles */
 #section1-left {
     width: 100%;
     height: 50%;
@@ -48,6 +55,54 @@
     background-color: #f8f6ff;
     color: #6C63FF;
 }
+
+/* Additional upload box styling */
+.upload-box-2 {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Purple text for header */
+.text-purple {
+    color: #6C63FF;
+    font-weight: 600;
+}
+
+/* Upload icon at the top */
+.upload-icon-lg {
+    font-size: 2.5rem;
+    color: #6C63FF;
+}
+
+/* Purple button */
+.btn-purple {
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    box-shadow: 0 2px 2px rgba(108, 99, 255, 0.3);
+
+    /* Height and alignment fixes */
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* space between icon and text */
+    padding: 0 20px;
+}
+
+.btn-purple i {
+    font-size: 1.1rem;
+}
+
+.btn-purple:hover {
+    background-color: #574fd2;
+    color: white;
+}
+
+
 
 /* ------ */
 
@@ -60,7 +115,6 @@
 .section-subtitle {
     font-size: 0.85rem;
     font-weight: 500;
-    /* margin-bottom: 1rem; */
 }
 
 .number-circle {
@@ -86,95 +140,218 @@
 
 .step-description {
     font-size: 0.8rem;
-    /* margin-bottom: 0.8rem; */
     color: #333;
 }
 
+/* Section 3 Scoped Styles */
 
-/* ------ */
+.resume-section-3 .rs3-heading {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.resume-section-3 .highlight {
+    color: #6851ff;
+}
+
+.resume-section-3 .rs3-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.resume-section-3 .rs3-h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.resume-section-3 .rs3-subtext {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.resume-section-3 .rs3-box {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    height: auto;
+}
+
+.resume-section-3 .rs3-icon {
+    background-color: #644ef5;
+    color: white;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.resume-section-3 .rs3-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resume-section-3 .rs3-list li {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.resume-section-3 .rs3-list i {
+    color: #6a5acd;
+}
+
+.resume-section-3 .rs3-list i.bi-check-circle {
+    color: #6a5acd;
+    font-size: 1rem;
+}
+
+#section-3-cards-upper-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.section-3-cards {
+    height: auto;
+    width: 550px;
+}
+
+/* Section 4 */
+
+#section4-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.section4-subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Section 5 */
+
+#section5-p2 {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#section5-p3 {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#section5-left {
+    width: 32rem;
+    height: 16rem;
+    border: 1px dashed #6C63FF;
+    border-radius: 12px;
+    background-color: #f8f6ff;
+    color: #6C63FF;
+}
+
+.bi-cloud-arrow-up-fill {
+    color: #6C63FF;
+    font-size: 2.5rem;
+}
+
+.upload-box {
+    width: 100%;
+}
+
+.upload-box .btn-primary {
+    background-color: #6C63FF;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+}
+
+.upload-box .btn-primary:hover {
+    background-color: #574fd2;
+}
+
+.upload-icon i {
+    color: #6C63FF;
+}
+
+
+/* FAQ Section */
+
+.faq-heading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.custom-shadow {
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.4);
+}
+
+
+.accordion-button {
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #6851ff;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #000;
+}
+
+.accordion-body {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Footer */
 
 #footer {
-    width: 100%;
     background: linear-gradient(180deg, #503cdd, #9246fd);
-    /* your dark bg */
-    color: white;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-top: 0;
 }
 
-#footer #elements {
-    display: flex;
-    justify-content: space-around;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem 4rem;
+.footer-text {
+    max-width: 550px;
 }
 
-.elements_footer {
-    flex: 1 1 200px;
-    max-width: 250px;
+
+.footer-p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.elements_footer h3 {
-    margin-bottom: 1rem;
-}
-
-.elements_footer a {
-    display: block;
-    width: 100%;
+.contact-footer-list {
     color: white;
     text-decoration: none;
-    margin: 0.4rem 0;
     font-size: 0.9rem;
 }
 
-.elements_footer a:hover {
+.contact-footer-list:hover {
     text-decoration: underline;
 }
 
-#logo_footer img {
-    margin-bottom: 1rem;
+.bi {
+    color: white;
+
 }
 
-#rights {
-    height: 3rem;
-    border-top: 1px solid white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    color: #aaaaaa;
-}
-
-#footer-p {
-    font-size: 0.7rem;
-    color: #00ffb2;
-}
-
-
-#rights-div1 {
-    height: auto;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    color: #FFFFFF;
-    font-size: 0.7rem;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-}
-
-.rights-div1-elements:hover {
-    text-decoration: underline;
+.bi:hover {
     cursor: pointer;
-}
-
-#rights-p {
-    color: #FFFFFF;
-    font-size: 0.7rem;
-    font-weight: 500;
 }
