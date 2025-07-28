@@ -355,3 +355,9 @@
 .bi:hover {
     cursor: pointer;
 }
+
+@media (max-width: 576px) {
+    #section1-p2 , #section5-p2, .faq-heading, .resume-section-3 .rs3-heading {
+        font-size: 2rem;
+    }
+}
